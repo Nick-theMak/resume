@@ -10,6 +10,15 @@
 
     <title>Nicholas Makdessi</title>
 
+    <!-- EmailJS library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.js"></script>
+
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,10 +101,12 @@
 
         <section class="section about">
             <h2>
-                I am a junior Blockchain developer with a keen interest in Blockchain Technology as well as Financial Technology, in particular specifically financial analysis and investment on an institutional scale.   
+                I am a junior Blockchain developer with a keen interest in Blockchain Technology as well as Financial
+                Technology, in particular specifically financial analysis and investment on an institutional scale.
             </h2>
             <ul class="achievements">
-                <li>🏆 Blockchain Developer Mentorship with <a href="https://www.dappuniversity.com/">Dapp University</a></li>
+                <li>🏆 Blockchain Developer Mentorship with <a href="https://www.dappuniversity.com/">Dapp
+                        University</a></li>
                 <li>🏆 Blockchain Bootcamp 2.0 </li>
                 <li>🏆 JavaScript Bootcamp</li>
             </ul>
@@ -291,6 +302,16 @@
 
             </div>
 
+            <div id="contact-form-container">
+
+                <form id="contact-form" method="post">
+                    <input type="text" name="from_name" placeholder="Your Name" required />
+                    <input type="email" name="from_email" placeholder="Your Email" required />
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" value="Send">Send Message</button>
+                </form>
+            </div>
+
             <ul class="contact-details flex-list">
                 <li>Sydney - Australia, 2000</li>
                 <hr />
@@ -308,8 +329,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.js"></script>
+
 </body>
 
 </html>
