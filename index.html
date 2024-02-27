@@ -70,16 +70,23 @@
 
         <p>
         <div class="button-container">
-            <button class="button-style1" onclick="">
-                <h4>Download Resume</h4>
-            </button>
+            <a href="https://github.com/Nick-theMak/resume/blob/main/pdf/Resume.pdf" download="N-Makdessi_Resume.pdf"
+                class="button-style1">
+                    Download Resume
+            </a>
             &nbsp;
-            <button class=" button-style2" onclick="">
-                <h4>Get in Touch</h4>
+            <button class="button-style2" onclick="document.getElementById('contact').scrollIntoView( { behavior:'smooth' });">
+                Get in Touch
             </button>
         </div>
+
+
         </p>
 
+  
+       
+
+      
 
         <p>
             <br>
@@ -125,26 +132,25 @@
 
             <div class="cards flex-center">
                 <div class="card">
+                    <img src="./img/projects/project_1.png" alt="">
+                    <h4 class="card-title">AMM Aggregator</h4>
+                    <p class="card-description">Scan multiple decentralised exchanges for the best exchange rate </p>
+                    <div class="card-buttons">
+                        <a href="#" class="card-button--site">Video Demo</a>
+                        <a href="https://github.com/Nick-theMak/aggregator" class="card-button--code">Code</a>
+                    </div>
+                </div>
+
+                <!-- <div class="card">
                     <img src="./img/projects/project_3.png" alt="">
-                    <h3 class="card-title">Aave</h3>
-                    <p class="card-description">Earn interest, borrow assets, and build applications.</p>
+                    <h3 class="card-title">DEX Orderbook</h3>
+                    <p class="card-description">Fully functional decentralised exchange showing orders and trades</p>
 
                     <div class="card-buttons">
                         <a href="#" class="card-button--site">Video Demo</a>
                         <a href="#" class="card-button--code">Code</a>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./img/projects/project_3.png" alt="">
-                    <h3 class="card-title">Aave</h3>
-                    <p class="card-description">Earn interest, borrow assets, and build applications.</p>
-
-                    <div class="card-buttons">
-                        <a href="#" class="card-button--site">Video Demo</a>
-                        <a href="#" class="card-button--code">Code</a>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -157,14 +163,18 @@
                 <div class="description-container">
                     <p class="experience-description">
                         I am in my penultimate year studying a Bachelor of Computer Science at the University of
-                        Wollongong. I have a keen interest in financial technology and intend to pursue a career in
+                        Wollongong. 
+                        <br>
+                        I have a keen interest in financial technology and intend to pursue a career in
                         the industry. This also extends into large scale systems used by financial institutions
                         including the financial instruments utilised in a variety of industries.
 
                         <br><br>
                         My interests align themselves with a career in business analysis, consulting, project
                         management, asset/risk management, quantitative analysis, artificial intelligence, and
-                        Blockchain development. I have started my work towards the Chartered Financial Analyst (CFA)
+                        Blockchain development.
+                        <br> 
+                        I have started my work towards the Chartered Financial Analyst (CFA)
                         charterholder accreditation to integrate finance and technology.
                     </p>
                 </div>
@@ -267,7 +277,7 @@
 
         <!-- CONTACT -->
 
-        <section class="section contact">
+        <section class="section contact" id="contact">
             <h1>
                 Get in touch
             </h1>
